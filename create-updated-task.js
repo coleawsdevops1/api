@@ -26,4 +26,4 @@ task.containerDefinitions[0].image = image
 const jsonTask = JSON.stringify(task)
 
 // create the tmp file
-fs.writeFile('updated-task.json', jsonTask, 'utf8')
+fs.writeFileSync('updated-task.json', jsonTask, 'utf8')
