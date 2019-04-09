@@ -8,12 +8,13 @@ const fs = require('fs')
 const { taskDefinition } = require('./base.json')
 
 // The only things we need for the update
-const { family, containerDefinitions } = taskDefinition
+const { family, containerDefinitions, taskRoleArn } = taskDefinition
 
 // Only inclue properties relevant to the CLI call found in --generate-cli-skeleton
 const task = {
   family,
   containerDefinitions,
+  taskRoleArn,
 }
 
 // tag of updated image
