@@ -15,6 +15,7 @@ app.start = function appStart () {
     const baseUrl = app.get('url').replace(/\/$/, '')
     console.log('---\n')
     console.log(`${process.env.NEW_PARAM}`)
+    console.log('Hello new update')
     console.log('Web server listening at: %s', baseUrl)
     if (app.get('loopback-component-explorer')) {
       const explorerPath = app.get('loopback-component-explorer').mountPath
